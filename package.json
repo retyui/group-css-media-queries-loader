@@ -1,0 +1,20 @@
+{
+  "name": "group-css-media-queries-loader",
+  "version": "0.0.1",
+  "description": "Webpack loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "css",
+    "media-queries"
+  ],
+  "author": "♥",
+  "license": "ISC",
+  "dependencies": {
+    "group-css-media-queries": "^1.1.1"
+  }
+}
