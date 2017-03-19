@@ -13,7 +13,7 @@ A [group-css-media-queries](https://github.com/Se7enSky/group-css-media-queries)
 
 
 
-##Install
+## Install
 ```bash
 npm install group-css-media-queries-loader --save-dev
 //or
@@ -22,7 +22,7 @@ yarn add group-css-media-queries-loader --dev
 
 
 
-##Usage
+## Usage
 
 Use the loader either via your webpack config, CLI or inline.
 
