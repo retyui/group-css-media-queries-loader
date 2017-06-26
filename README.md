@@ -1,24 +1,15 @@
 # group-css-media-queries-loader
-<div align="center">
-  <a href="https://github.com/webpack/webpack">
-    <img width="200" height="200"
-      src="https://webpack.js.org/assets/icon-square-big.svg">
-  </a>
-</div>
 
 A [group-css-media-queries](https://github.com/Se7enSky/group-css-media-queries) loader for [webpack](https://github.com/webpack/webpack).
 
 
-[![npm version](https://badge.fury.io/js/group-css-media-queries-loader.svg)](https://badge.fury.io/js/group-css-media-queries-loader)
-
+[![Open in npm](https://img.shields.io/npm/v/group-css-media-queries-loader.svg)](https://www.npmjs.com/package/group-css-media-queries-loader)
+[![Dependencies](https://img.shields.io/david/retyui/group-css-media-queries-loader.svg)](https://david-dm.org/retyui/group-css-media-queries-loader)
 
 
 ## Install
-```bash
-npm install group-css-media-queries-loader --save-dev
-//or
-yarn add group-css-media-queries-loader --dev
-```
+`npm i -D group-css-media-queries-loader` or `yarn add --dev group-css-media-queries-loader`
+
 
 
 
@@ -71,10 +62,6 @@ import css_min from 'style-loader!css-loader!group-css-media-queries-loader!./st
 ```
 
 
-
-
-
-
 **Examples (for webpack 1.x):**
 **webpack.config.js**
 ```js
@@ -90,3 +77,5 @@ module: {
 var css = require('!raw!group-css-media-queries!./file.css'); // Just the CSS
 var css = require('!css!group-css-media-queries!./file.css'); // CSS with processed url(...)s
 ```
+
+
