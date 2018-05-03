@@ -1,1 +1,0 @@
-module.exports = require('group-css-media-queries');

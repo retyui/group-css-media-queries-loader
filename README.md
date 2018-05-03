@@ -8,9 +8,12 @@ A [group-css-media-queries](https://github.com/Se7enSky/group-css-media-queries)
 
 
 ## Install
-`npm i -D group-css-media-queries-loader` or `yarn add --dev group-css-media-queries-loader`
+```bash
+yarn add -D group-css-media-queries-loader
 
-
+# for webpack@1
+yarn add -D group-css-media-queries-loader@1
+```
 
 
 ## Usage
@@ -29,7 +32,15 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          'group-css-media-queries-loader'
+          
+          'group-css-media-queries-loader',
+          // or with config
+          {
+            loader: 'group-css-media-queries-loader',
+            options: {
+              sourceMap: true
+            }
+          }
         ]
       }
     ]
@@ -43,7 +54,7 @@ module.exports = {
 import css_min from 'style.css';
 ```
 
-### CLI
+#### CLI
 
 ```bash
 webpack --module-bind 'css=style-loader!css-loader!group-css-media-queries-loader'
@@ -54,7 +65,7 @@ webpack --module-bind 'css=style-loader!css-loader!group-css-media-queries-loade
 import css_min from 'style.css';
 ```
 
-### Inline
+#### Inline
 
 **In your application**
 ```js
@@ -62,20 +73,8 @@ import css_min from 'style-loader!css-loader!group-css-media-queries-loader!./st
 ```
 
 
-**Examples (for webpack 1.x):**
-**webpack.config.js**
-```js
-module: {
-  loaders: [{
-    test: /\.css$/,
-    loader: 'css!group-css-media-queries'
-  }]
-}
-```
-**In your application**
-```js
-var css = require('!raw!group-css-media-queries!./file.css'); // Just the CSS
-var css = require('!css!group-css-media-queries!./file.css'); // CSS with processed url(...)s
-```
+## Options
 
+#### __`sourceMap`__ boolean `true` or `false`
 
+Enable CSS source maps.
