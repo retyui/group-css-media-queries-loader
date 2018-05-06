@@ -5,15 +5,14 @@ A [group-css-media-queries](https://github.com/Se7enSky/group-css-media-queries)
 
 [![Open in npm](https://img.shields.io/npm/v/group-css-media-queries-loader.svg)](https://www.npmjs.com/package/group-css-media-queries-loader)
 [![Dependencies](https://img.shields.io/david/retyui/group-css-media-queries-loader.svg)](https://david-dm.org/retyui/group-css-media-queries-loader)
+[![count downloads group-css-media-queries-loader](https://img.shields.io/npm/dm/group-css-media-queries-loader.svg)](https://www.npmjs.com/package/group-css-media-queries-loader)
 
 
 ## Install
 ```bash
 yarn add -D group-css-media-queries-loader
-
-# for webpack@1
-yarn add -D group-css-media-queries-loader@1
 ```
+
 
 
 ## Usage
@@ -49,6 +48,15 @@ module.exports = {
 ```
 
 
+
+## Options
+
+#### __`sourceMap`__ boolean `true` or `false`
+
+Enable CSS source maps.
+
+
+
 **In your application**
 ```js
 import css_min from 'style.css';
@@ -71,10 +79,3 @@ import css_min from 'style.css';
 ```js
 import css_min from 'style-loader!css-loader!group-css-media-queries-loader!./style.css';
 ```
-
-
-## Options
-
-#### __`sourceMap`__ boolean `true` or `false`
-
-Enable CSS source maps.
