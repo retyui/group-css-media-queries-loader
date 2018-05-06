@@ -102,7 +102,7 @@ const groupCssMediaQueries = postcssPlugin('group-css-media-queries', () => root
         otherRules
     ];
 
-    for (rules of sortedListRules) {
+    for (const rules of sortedListRules) {
         for (const {params, mediaQueryRules} of rules) {
             const newAtRule = postcssAtRule({
                 name: 'media',

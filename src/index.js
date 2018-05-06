@@ -1,5 +1,10 @@
 const postcss = require("postcss");
-const {getOptions} = require("loader-utils");
+const {
+    getOptions,
+    getRemainingRequest,
+    getCurrentRequest
+} = require("loader-utils");
+
 const {groupCssMediaQueries} = require("./group-css-media-queries");
 
 const pipeline = postcss(groupCssMediaQueries);
@@ -8,10 +13,10 @@ function GroupCssMediaQueriesLoader(inputSource, prevMap, meta) {
     const options = getOptions(this);
     const sourceMap = options.sourceMap === undefined ? this.sourceMap : Boolean(options.sourceMap);
     const callback = this.async();
-    const source = this.resourcePath;
 
     pipeline.process(inputSource, {
-        from: source,
+        from: getRemainingRequest(this).split("!").pop(),
+        to: getCurrentRequest(this).split("!").pop(),
         map: sourceMap ? {
             prev: prevMap,
             sourcesContent: true,
