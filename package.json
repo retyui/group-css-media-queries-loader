@@ -1,6 +1,6 @@
 {
   "name": "group-css-media-queries-loader",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "lib/index.js",
   "files": [
     "lib"
