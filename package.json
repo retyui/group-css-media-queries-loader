@@ -6,19 +6,23 @@
     "lib"
   ],
   "dependencies": {
-    "loader-utils": "^1.1.0",
-    "postcss": "^6.0.0"
+    "loader-utils": "^1.1.0"
   },
   "peerDependencies": {
+    "postcss": ">=6.0.0",
     "webpack": ">=2.0.0"
   },
   "scripts": {
-    "build": "babel src --out-dir lib"
+    "prebuild": "rimraf ./lib",
+    "build": "babel src --out-dir lib",
+    "test": "npm run build; node ./test/test.js"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.46",
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46"
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "postcss": "^7.0.0",
+    "rimraf": "^2.6.2"
   },
   "engines": {
     "node": ">=6.11.0"
