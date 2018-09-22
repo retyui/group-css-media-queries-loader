@@ -4,6 +4,7 @@
 - Update babel
 - Update dependencies
 - Add test
+- Add CI
 
 ## 2.0.0
 
