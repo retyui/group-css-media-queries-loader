@@ -15,7 +15,7 @@
   "scripts": {
     "prebuild": "rimraf ./lib",
     "build": "babel src --out-dir lib",
-    "test": "npm run build; node ./test/test.js"
+    "test": "npm run build && node ./test/test.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
