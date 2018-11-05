@@ -10,7 +10,7 @@ const { groupCssMediaQueries } = require("./group-css-media-queries");
 const pipeline = postcss(groupCssMediaQueries);
 
 function GroupCssMediaQueriesLoader(inputSource, prevMap, meta) {
-  const options = getOptions(this);
+  const options = getOptions(this) || {};
   const sourceMap =
     options.sourceMap === undefined
       ? this.sourceMap
