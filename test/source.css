@@ -1,43 +1,55 @@
 .foo {
-    width: 240px;
+  width: 240px;
 }
 
 @media screen and (min-width: 768px) {
-    .foo {
-        width: 576px;
-    }
+  .foo {
+    width: 576px;
+  }
 }
 
 .bar {
-    width: 160px;
+  width: 160px;
 }
 
 @media screen and (min-width: 768px) {
-    .bar {
-        width: 384px;
-    }
+  .bar {
+    width: 384px;
+  }
 }
-
 
 .header-main {
-    background-image: url("/images/branding/logo.main.png");
+  background: red;
 }
-@media all and (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5/1),(min-device-pixel-ratio:1.5),(min-resolution:138dpi),(min-resolution:1.5dppx) {
-    .header-main {
-        background-image: url("/images/branding/logo.main@2x.png");
-        -webkit-background-size: auto auto;
-        -moz-background-size: auto auto;
-        background-size: auto auto;
-    }
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 1.5/1),
+  (min-device-pixel-ratio: 1.5),
+  (min-resolution: 138dpi),
+  (min-resolution: 1.5dppx) {
+  .header-main {
+    background: gold;
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
 }
+
 .footer-main {
-    background-image: url("/images/branding/logo.main.png");
+  background: blue;
 }
-@media all and (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5/1),(min-device-pixel-ratio:1.5),(min-resolution:138dpi),(min-resolution:1.5dppx) {
-    .footer-main {
-        background-image: url("/images/branding/logo.main@2x.png");
-        -webkit-background-size: auto auto;
-        -moz-background-size: auto auto;
-        background-size: auto auto;
-    }
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+  (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 1.5/1),
+  (min-device-pixel-ratio: 1.5),
+  (min-resolution: 138dpi),
+  (min-resolution: 1.5dppx) {
+  .footer-main {
+    background: pink;
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
 }

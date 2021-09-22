@@ -1,5 +1,11 @@
 # Change Log
 
+## 4.1.0
+
+- Add typescript
+- Add E2E tests
+- Fix [invalid](https://github.com/retyui/group-css-media-queries-loader/issues/11#issuecomment-925331021) `postcss` import 
+
 ## 4.0.0
 
 ### ⚠ BREAKING CHANGES
