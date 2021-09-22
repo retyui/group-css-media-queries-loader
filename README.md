@@ -4,8 +4,7 @@ A [group-css-media-queries](https://github.com/Se7enSky/group-css-media-queries)
 
 [![Open in npm](https://img.shields.io/npm/v/group-css-media-queries-loader.svg)](https://www.npmjs.com/package/group-css-media-queries-loader)
 [![Dependencies](https://img.shields.io/david/retyui/group-css-media-queries-loader.svg)](https://david-dm.org/retyui/group-css-media-queries-loader)
-[![AppVeyor](https://img.shields.io/appveyor/ci/retyui/group-css-media-queries-loader.svg?label=windows)](https://ci.appveyor.com/project/retyui/group-css-media-queries-loader)
-[![Travis](https://img.shields.io/travis/retyui/group-css-media-queries-loader.svg?label=unix)](https://travis-ci.org/retyui/group-css-media-queries-loader)
+[![CI](https://github.com/retyui/group-css-media-queries-loader/actions/workflows/nodejs.yml/badge.svg)](https://github.com/retyui/group-css-media-queries-loader/actions/workflows/nodejs.yml)
 [![count downloads group-css-media-queries-loader](https://img.shields.io/npm/dm/group-css-media-queries-loader.svg)](https://www.npmjs.com/package/group-css-media-queries-loader)
 
 ## Install
