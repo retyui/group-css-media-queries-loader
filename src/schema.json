@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "sourceMap": {
+      "description": "Enables/Disables generation of source maps.",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

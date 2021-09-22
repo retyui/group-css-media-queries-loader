@@ -7,11 +7,11 @@
 }
 
 .header-main {
-  background-image: url("/images/branding/logo.main.png");
+  background: red;
 }
 
 .footer-main {
-  background-image: url("/images/branding/logo.main.png");
+  background: blue;
 }
 
 @media screen and (min-width: 768px) {
@@ -30,13 +30,13 @@
   (min-resolution: 138dpi),
   (min-resolution: 1.5dppx) {
   .header-main {
-    background-image: url("/images/branding/logo.main@2x.png");
+    background: gold;
     -webkit-background-size: auto auto;
     -moz-background-size: auto auto;
     background-size: auto auto;
   }
   .footer-main {
-    background-image: url("/images/branding/logo.main@2x.png");
+    background: pink;
     -webkit-background-size: auto auto;
     -moz-background-size: auto auto;
     background-size: auto auto;
