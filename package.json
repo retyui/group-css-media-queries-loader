@@ -9,21 +9,21 @@
     "loader-utils": "^1.1.0"
   },
   "peerDependencies": {
-    "postcss": ">=6.0.0",
-    "webpack": ">=2.0.0"
+    "webpack": ">=2.0.0",
+    "postcss": "^8.3.7"
   },
   "scripts": {
     "prebuild": "rimraf ./lib",
     "build": "babel src --out-dir lib",
     "test": "npm run build && node ./test/test.js",
-    "prepublishOnly": "npm run build & npm run test"
+    "prepublishOnly": "npm run build & npm run test",
+    "cleanPublish": "npx clean-publish"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "postcss": "^7.0.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^3.0.2"
   },
   "engines": {
     "node": ">=6.11.0"
