@@ -2,8 +2,11 @@ os: Visual Studio 2015
 platform: x64
 environment:
   matrix:
+    - nodejs_version: "18"
+    - nodejs_version: "16"
+    - nodejs_version: "14"
+    - nodejs_version: "12"
     - nodejs_version: "10"
-    - nodejs_version: "8"
 
 install:
   - ps: Install-Product node $env:nodejs_version x64

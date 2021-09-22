@@ -35,18 +35,18 @@ module.exports = {
           "style-loader",
           {
             loader: "css-loader",
-            options: { sourceMap }
+            options: { sourceMap },
           },
           // 'group-css-media-queries-loader',
           // or with config
           {
             loader: "group-css-media-queries-loader",
-            options: { sourceMap }
-          }
-        ]
-      }
-    ]
-  }
+            options: { sourceMap },
+          },
+        ],
+      },
+    ],
+  },
 };
 ```
 
