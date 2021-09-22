@@ -126,6 +126,5 @@ function GroupCssMediaQueriesPostCssPlugin() {
   };
 }
 
-GroupCssMediaQueriesPostCssPlugin.postcss = true;
-
-export { GroupCssMediaQueriesPostCssPlugin };
+module.exports = GroupCssMediaQueriesPostCssPlugin;
+module.exports.postcss = true;
