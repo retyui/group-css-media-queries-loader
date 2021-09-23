@@ -1,4 +1,6 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "group-css-media-queries-loader options",
   "type": "object",
   "properties": {
     "sourceMap": {

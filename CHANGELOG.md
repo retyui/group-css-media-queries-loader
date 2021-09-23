@@ -2,9 +2,10 @@
 
 ## 4.1.0
 
-- Add typescript
+- Fix [invalid](https://github.com/retyui/group-css-media-queries-loader/issues/11#issuecomment-925331021) `postcss` import
+- Add loader options Schema validation
 - Add E2E tests
-- Fix [invalid](https://github.com/retyui/group-css-media-queries-loader/issues/11#issuecomment-925331021) `postcss` import 
+- Add typescript
 
 ## 4.0.0
 
@@ -23,6 +24,6 @@
 
 ## 2.0.0
 
-- deprecated node@4.x.x
-- Deprecated webpack@1.x.x
-- Added `sourceMap: true|false` options (based on postcss)
+- deprecated `node@4.x.x`
+- Deprecated `webpack@1.x.x`
+- Added `sourceMap: boolean` options (based on postcss)
