@@ -5,11 +5,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "TS_NODE_PROJECT=\"webpack.tsconfig.json\" webpack"
+    "build": "cross-env TS_NODE_PROJECT=\"webpack.tsconfig.json\" webpack"
   },
   "devDependencies": {
     "@types/node": "^16.9.6",
     "@types/webpack": "^5.28.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.3.0",
     "style-loader": "^3.3.0",
     "ts-node": "^10.2.1",

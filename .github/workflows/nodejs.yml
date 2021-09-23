@@ -3,17 +3,21 @@ name: Code Quality
 on:
   push:
     paths:
-      - ".github/**"
-      - "yarn.lock"
-      - "**.js"
-
+      - '.github/**'
+      - 'yarn.lock'
+      - '**.js'
+  pull_request:
+    paths:
+      - '.github/**'
+      - 'yarn.lock'
+      - '**.js'
 
 jobs:
   test_and_lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ 10, 12, 14, 16 ]
+        node: [10, 12, 14, 16]
     steps:
       - uses: actions/setup-node@v2
         with:
