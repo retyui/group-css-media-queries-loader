@@ -1,6 +1,6 @@
 {
   "name": "group-css-media-queries-loader",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": ["lib"],
@@ -28,6 +28,9 @@
     "test": "node ./test/test.js && cd example/webpack5 && yarn --ignore-engines && yarn build && cd ../..",
     "prepublishOnly": "npm run test"
   },
+  "optionalDependencies": {
+    "postcss-loader": "^6.0.0"
+  },
   "devDependencies": {
     "@tsconfig/node10": "^1.0.1",
     "@types/loader-utils": "^2.0.3",
@@ -43,6 +46,6 @@
     "node": ">=10.0.0"
   },
   "repository": "https://github.com/retyui/group-css-media-queries-loader",
-  "author": "David Narbutovich <vamnemne@gmail.com>",
+  "author": "David <4661784+retyui@users.noreply.github.com>",
   "license": "MIT"
 }
