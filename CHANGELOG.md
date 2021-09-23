@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.2.0
+
+- Auto-configure `sourceMap` option, based on [`.devtool`](https://webpack.js.org/configuration/devtool/#devtool)
+
 ## 4.1.0
 
 - Fix [invalid](https://github.com/retyui/group-css-media-queries-loader/issues/11#issuecomment-925331021) `postcss` import
