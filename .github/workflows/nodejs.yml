@@ -6,10 +6,11 @@ on:
       - '.github/**'
       - 'yarn.lock'
       - '**.js'
-    branches: [master]
-
   pull_request:
-    branches: [master]
+    paths:
+      - '.github/**'
+      - 'yarn.lock'
+      - '**.js'
 
 jobs:
   test_and_lint:
