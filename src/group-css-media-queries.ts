@@ -1,12 +1,6 @@
-import {
-  AtRule,
-  atRule as postcssAtRule,
-  Plugin,
-  PluginCreator,
-} from "postcss";
+import type { AtRule, Plugin, PluginCreator } from "postcss";
 
 const EM_TO_PX_RATIO = 16;
-
 const MIN_WIDTH = "minWidth" as const;
 const MAX_WIDTH = "maxWidth" as const;
 const UNIT = "init" as const;
@@ -100,15 +94,11 @@ const sortMedia =
 function GroupCssMediaQueriesPostCssPlugin() {
   return {
     postcssPlugin: "group-css-media-queries",
-    Once(root) {
+    Once(root, { atRule: postcssAtRule }) {
       const medias: MediaQueries = {};
 
       root.walkAtRules("media", (atRule) => {
-        if (!(atRule.parent && atRule.parent.type === "root")) {
-          return;
-        }
-
-        if (atRule.name !== "media") {
+        if (atRule.parent?.type !== "root" || atRule.name !== "media") {
           return;
         }
 
