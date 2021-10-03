@@ -1,11 +1,14 @@
 {
   "name": "group-css-media-queries-loader",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
+  "dependencies": {
+    "schema-utils": "^2.0.0 || ^3.0.0"
+  },
   "peerDependencies": {
     "loader-utils": "^2.0.0 || ^1.0.0",
     "postcss": ">=8.1.0",
@@ -22,6 +25,9 @@
       "optional": true
     }
   },
+  "optionalDependencies": {
+    "postcss-loader": "^6.0.0"
+  },
   "scripts": {
     "prebuild": "rimraf ./lib",
     "build": "tsc",
@@ -29,9 +35,6 @@
     "pretest": "npm run build",
     "test": "node ./test/test.js && cd example/webpack5 && yarn --ignore-engines && yarn build && cd ../..",
     "prepublishOnly": "npm run test"
-  },
-  "optionalDependencies": {
-    "postcss-loader": "^6.0.0"
   },
   "devDependencies": {
     "@tsconfig/node10": "^1.0.1",

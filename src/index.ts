@@ -4,7 +4,7 @@ import {
   getRemainingRequest,
   getCurrentRequest,
 } from "loader-utils";
-import { validate } from "schema-utils";
+import schemaUtils from "schema-utils";
 import type { JSONSchema7 } from "schema-utils/declarations/validate";
 import type { LoaderContext } from "webpack";
 import type { LoaderOptions, SourceMap, AdditionalData } from "./types";
@@ -23,7 +23,10 @@ function GroupCssMediaQueriesLoader(
   // 2.x.x return empty `object` if empty query
   const loaderOptions = getOptions(this) || {};
 
-  validate(schema as JSONSchema7, loaderOptions, {
+  // 2.x.x schemaUtils(schema)
+  // 3.x.x schemaUtils.validate(schema)
+  // @ts-ignore
+  (schemaUtils.validate || schemaUtils)(schema as JSONSchema7, loaderOptions, {
     name: "group-css-media-queries-loader",
   });
 

@@ -1,5 +1,10 @@
 # Change Log
 
+## 4.3.0
+
+- Fix [`schema-utils`](https://github.com/retyui/group-css-media-queries-loader/issues/11#issuecomment-926810847) not found error
+- Apply a PostCSS plugin guidelines [rule](https://github.com/postcss/postcss/blob/main/docs/guidelines/plugin.md#14-keep-postcss-to-peerdependencies)
+
 ## 4.2.0
 
 - Auto-configure `sourceMap` option, based on [`.devtool`](https://webpack.js.org/configuration/devtool/#devtool)
